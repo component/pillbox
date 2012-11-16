@@ -16,7 +16,7 @@ $ component install component/pillbox
 ``` javascript
 var Pillbox = require('pillbox');
 
-var input = TagInput(document.getElementById('tags'))
+var input = Pillbox(document.getElementById('tags'))
 
 input.on('add', function(tag){
   console.log(tag + ' added');
