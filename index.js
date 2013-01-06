@@ -49,7 +49,7 @@ Emitter(Pillbox.prototype);
 
 /**
  * Handle keyup.
- * 
+ *
  * @api private
  */
 
@@ -114,7 +114,7 @@ Pillbox.prototype.add = function(tag) {
   // list item
   var li = document.createElement('li');
   li.setAttribute('data', tag);
-  li.innerText = tag;
+  li.appendChild(document.createTextNode(tag));
   li.onclick = function(e) {
     e.preventDefault();
     self.input.focus();
@@ -122,7 +122,7 @@ Pillbox.prototype.add = function(tag) {
 
   // delete link
   var del = document.createElement('a');
-  del.innerText = '✕';
+  del.appendChild(document.createTextNode('✕'));
   del.href = '#';
   del.onclick = this.remove.bind(this, tag);
   li.appendChild(del);
