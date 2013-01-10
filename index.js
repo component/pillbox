@@ -108,6 +108,9 @@ Pillbox.prototype.add = function(tag) {
   // exists
   if (this.tags.has(tag)) return;
 
+  // lowercase
+  if (this.options.lowercase) tag = tag.toLowerCase();
+
   // add it
   this.tags.add(tag);
 

@@ -34,6 +34,12 @@ input.on('remove', function(tag){
 
 ## API
 
+### Pillbox(input, options)
+
+  Initialize with the given `input` element and `options`. Available options include:
+
+  * `lowercase`: all added tags get converted to lowercase.
+
 ### Pillbox#add(tag)
 
   Add `tag` string if it does not already exist.
