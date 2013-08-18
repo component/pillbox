@@ -60,6 +60,12 @@ Pillbox.prototype.onkeyup = function(e){
       this.add(e.target.value);
       e.target.value = '';
       break;
+    case 'space':
+      if (!this.options.space) return;
+      e.preventDefault();
+      this.add(e.target.value);
+      e.target.value = '';
+      break;
     case 'backspace':
       if ('' == e.target.value) {
         this.remove(this.last());

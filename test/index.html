@@ -65,7 +65,7 @@
     <script>
       var Pillbox = require('pillbox');
 
-      var input = Pillbox(document.getElementById('tags'), { lowercase : true });
+      var input = Pillbox(document.getElementById('tags'), { lowercase : true, space: true });
 
       input.on('add', function(tag){
         console.log(tag + ' added')
