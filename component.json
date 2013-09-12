@@ -4,10 +4,11 @@
   "description": "Tokenized input or 'pillbox' for tags etc",
   "version": "1.1.0",
   "keywords": ["tags", "tag", "input", "ui", "pillbox"],
-  "dependencies": { 
-    "component/event": "*",
+  "dependencies": {
+    "component/events": "*",
     "component/keyname": "*",
     "component/emitter": "*",
+    "component/each": "*",
     "component/set": "*"
   },
   "development": {},

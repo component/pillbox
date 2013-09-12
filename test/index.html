@@ -67,6 +67,8 @@
 
       var input = Pillbox(document.getElementById('tags'), { lowercase : true, space: true });
 
+      input.values(['one', 'two']);
+
       input.on('add', function(tag){
         console.log(tag + ' added')
         console.log(input.values())
