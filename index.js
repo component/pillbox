@@ -180,7 +180,7 @@ Pillbox.prototype.add = function(tag) {
   span.appendChild(del);
 
   this.el.insertBefore(span, this.input);
-  this.emit('add', tag);
+  this.emit('add', tag, span);
 
   return this;
 }
